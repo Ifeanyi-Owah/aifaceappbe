@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt-nodejs");
 const cors = require("cors");
 const knex = require('knex');
+const PORT = process.env.PORT || 3000;
 
 const db= knex({
     client: 'pg',
@@ -102,7 +103,8 @@ app.put('/image', function(req, res){
     .catch(err => res.status(400).json('unable to get entry, please try again'));
     })
 
-app.listen(3000, ()=>{
-    console.log('app running on PORT...');
-})
+app.listen(PORT, function(){
+    console.log(`app runing on PORT ${PORT}`);
+});
+
 

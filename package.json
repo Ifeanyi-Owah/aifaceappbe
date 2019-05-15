@@ -3,14 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "bcrypt-nodejs": "0.0.3",
+    "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.19.0",
     "clarifai": "^2.9.0",
     "cors": "^2.8.5",
@@ -18,7 +12,18 @@
     "knex": "^0.16.7",
     "pg": "^7.11.0"
   },
-  "devDependencies": {
-    "nodemon": "^1.19.0"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ifeanyi-Owah/aifaceappbe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ifeanyi-Owah/aifaceappbe/issues"
+  },
+  "homepage": "https://github.com/Ifeanyi-Owah/aifaceappbe#readme"
 }
